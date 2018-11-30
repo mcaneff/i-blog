@@ -1,0 +1,28 @@
+<div class="circular negative ui icon right floated button"{{action 'delModal'}}>
+  <i class="icon x"></i>
+</div>
+{{#ui-modal name="delPost" class="delPost" }}
+  <h2 class="ui icon header">
+    <i class="exclamation triangle icon"></i>
+    <div class="content">
+      Please Confirm...
+    </div>
+  </h2>
+  <br>
+  <div class="ui one column stackable center aligned page grid">
+    <div class="column twelve wide">
+      Are you sure you need to delete this post?
+    </div>
+  </div>
+  <br>
+  <div class="actions">
+    <div class="ui negative right labeled icon button">
+      Cancel
+      <i class="icon x"></i>
+    </div>
+    <div class="ui positive right labeled icon button">
+      Save
+      <i class="checkmark icon"></i>
+    </div>
+  </div>
+{{/ui-modal}}

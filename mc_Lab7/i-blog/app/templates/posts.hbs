@@ -1,0 +1,11 @@
+<br>
+<h2> Blog Posts </h2>
+{{#each model as |onePost|}}
+  <div id={{onePost.id}}>
+    {{del-posts}}
+    {{edit-posts title=onePost.title body=onePost.body id=onePost.id}}
+    <li class="ui all titles">{{onePost.title}}</li>
+    <br>
+  </div>
+{{/each}}
+{{add-new-posts}}
